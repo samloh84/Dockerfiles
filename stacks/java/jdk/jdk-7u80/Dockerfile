@@ -5,7 +5,7 @@ ENV JAVA_HOME /opt/java/jdk1.7.0_80
 ENV JRE_HOME ${JAVA_HOME}/jre
 
 # Download the JDK and the JCE policies
-RUN wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" \
+RUN wget --progress=bar:force --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" \
 http://download.oracle.com/otn-pub/java/jdk/7u80-b15/jdk-7u80-linux-x64.tar.gz \
 http://download.oracle.com/otn-pub/java/jce/7/UnlimitedJCEPolicyJDK7.zip \
 

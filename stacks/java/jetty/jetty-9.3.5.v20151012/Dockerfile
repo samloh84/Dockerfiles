@@ -5,7 +5,7 @@ ENV JETTY_HOME /opt/jetty/jetty-distribution-9.3.5.v20151012
 ENV JETTY_BASE ${JETTY_HOME}
 
 # Download the Jetty archive
-RUN wget \
+RUN wget --progress=bar:force \
 "http://download.eclipse.org/jetty/9.3.5.v20151012/dist/jetty-distribution-9.3.5.v20151012.tar.gz" \
 
 # Untar Jetty, move Jetty to the correct directory and remove the archive

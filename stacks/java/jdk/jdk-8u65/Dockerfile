@@ -5,7 +5,7 @@ ENV JAVA_HOME /opt/java/jdk1.8.0_65
 ENV JRE_HOME ${JAVA_HOME}/jre
 
 # Download the JDK and the JCE policies
-RUN wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" \
+RUN wget --progress=bar:force --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" \
 http://download.oracle.com/otn-pub/java/jdk/8u65-b17/jdk-8u65-linux-x64.tar.gz \
 http://download.oracle.com/otn-pub/java/jce/8/jce_policy-8.zip \
 
