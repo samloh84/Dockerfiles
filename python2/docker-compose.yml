@@ -1,0 +1,7 @@
+version: '3.8'
+
+services:
+  python2:
+    build:
+      context: .
+    image: samloh84/python2:latest

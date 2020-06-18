@@ -1,0 +1,7 @@
+version: '3.8'
+
+services:
+  python3:
+    build:
+      context: .
+    image: samloh84/python3:latest

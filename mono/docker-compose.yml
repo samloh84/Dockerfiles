@@ -1,0 +1,7 @@
+version: '3.8'
+
+services:
+  mono:
+    build:
+      context: .
+    image: docker.pkg.github.com/samloh84/dockerfiles/mono:latest
