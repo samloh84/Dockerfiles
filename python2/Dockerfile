@@ -53,7 +53,7 @@ gpg --no-default-keyring --keyring "${PYTHON2_GPG_KEYRING_PATH}" --verify "${PYT
 tar -C "${PYTHON2_SRC_DIR}" --strip-components=1 -xf "${PYTHON2_ARCHIVE_PATH}" && \
 cd "${PYTHON2_SRC_DIR}" && \
 ./configure --prefix="${PYTHON2_INSTALL_DIR}" && \
-make && \
+make -j$(nproc) && \
 make install && \
 rm -rf "${PYTHON2_TEMP_DIR}" && \
 find "${PYTHON2_INSTALL_DIR}" -type f -executable -exec ldd {} \; | \

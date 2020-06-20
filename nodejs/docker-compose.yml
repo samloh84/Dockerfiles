@@ -1,0 +1,7 @@
+version: '3.8'
+
+services:
+  nodejs:
+    build:
+      context: .
+    image: samloh84/nodejs:latest
